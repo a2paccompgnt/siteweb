@@ -1,0 +1,195 @@
+/*font-family: "Lucida Handwriting";
+font-family: "Droid Sans";
+
+couleurs : #017c91
+
+insta
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-3036d470-8528-4a32-bb31-a019ca0ad695"></div>
+
+fb
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-9b9f13dd-3a42-4bfd-967f-62b79303bd27"></div>
+
+github
+https://github.com/a2paccompgnt/siteweb
+*/
+
+@font-face {
+    font-family: 'Droid Sans';
+    src: url(/fonts/DroidSans/DroidSans.ttf);
+}
+@font-face {
+    font-family: 'Lucida Handwriting';
+    src: url(/fonts/Lucida_Handwriting_Italic/Lucida_Handwriting_Italic.ttf);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-color: black;
+    font-family: 'Droid Sans', serif;
+}
+
+h1{
+    color : #017c91;
+    font-family: "Lucida Handwriting";
+    font-size: 3em;
+}
+
+h2{
+    color : #017c91;
+    font-family: "Lucida Handwriting";
+    text-shadow: 1px 1px 1px white;
+    font-size: 2em;
+}
+
+h3{
+    color : white;
+    text-shadow: 2px 2px 4px #017c91;
+    font-size: 1.5em;
+}
+
+p{
+    color : white;
+}
+
+a{
+    text-decoration:none;
+    color: #017c91;
+    font-weight: bold;
+    font-size: 1.3em;
+
+}
+
+.navbar{
+    background-color: black;
+    box-shadow: 2px 2px 5px #017c91;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a:hover{
+    color : white;
+    transition: all 1s;
+}
+
+.navbar a:focus{
+    background-color : white;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.navbar li {
+    display: flex;
+    padding: 5%;
+}
+
+.navbar i{
+    font-family: "Font Awesome 5 Free";
+}
+
+.video video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.video {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 3%;
+}
+
+.video .opacity-video{    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg,black, transparent);
+}
+
+.video .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.video .logo{
+    display: flex;
+    justify-content: center;
+}
+.video .logo img{
+    width: 25%;
+}
+
+
+.actualites .titre{
+    text-align: center;
+}
+
+.actualites .reseaux{
+    display: flex;
+    justify-content: space-around;
+}
+
+.actualites .facebook{
+
+    width: 500px;
+
+}
+
+
+.contact{
+    background: url(images/contacter.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px; /* à enlever dès qu'il y a le contenu*/ 
+    position: relative;
+    z-index: 0;
+    box-shadow: inset 0px 0px 5px 4px black;
+}
+
+.contact .opacity{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(black, #017c91);
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.contact .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+.footer{
+    text-align: center;
+}
+
+.footer a {
+    font-weight : bold;
+}

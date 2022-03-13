@@ -17,11 +17,11 @@ https://github.com/a2paccompgnt/siteweb
 
 @font-face {
     font-family: 'Droid Sans';
-    src: url(/fonts/DroidSans/DroidSans.ttf);
+    src: url(fonts/DroidSans/DroidSans.ttf);
 }
 @font-face {
     font-family: 'Lucida Handwriting';
-    src: url(/fonts/Lucida_Handwriting_Italic/Lucida_Handwriting_Italic.ttf);
+    src: url(fonts/Lucida_Handwriting_Italic/Lucida_Handwriting_Italic.ttf);
 }
 
 html {
@@ -77,13 +77,15 @@ a{
     justify-content: center;
 }
 
+.navbar img{
+    height: 80px;
+    position: absolute;
+    left: 2%;
+}
+
 .navbar a:hover{
     color : white;
     transition: all 1s;
-}
-
-.navbar a:focus{
-    background-color : white;
 }
 
 .navbar ul{
@@ -141,7 +143,6 @@ a{
     width: 25%;
 }
 
-
 .actualites .titre{
     text-align: center;
 }
@@ -192,4 +193,53 @@ a{
 
 .footer a {
     font-weight : bold;
+}
+
+
+@media(max-width : 575.98px){
+    .navbar a{
+        font-size: 0.9em;
+    }
+
+    .navbar img{
+        display: none;
+    }
+
+    .video .logo img {
+        width: 80%;
+    }
+
+    .video .text h1{
+        font-size: 1.1em;
+    }
+
+    video {
+        left: -160%;
+        position: relative;
+        z-index: -1;
+    }
+
+    .actualites .titre h2{
+        font-size: 1em;
+        text-shadow: 0.6px 0.3px 1px white;
+    }
+
+    .actualites .reseaux {
+        flex-direction: column;
+        padding: 1%;
+    }
+
+    #eapps-instagram-feed-1 {
+        width: auto;
+    }
+
+    .actualites .facebook {
+        width: auto;
+    }
+
+    .contact .content .titre h2{
+        font-size: 1.2em;
+        text-shadow: 0.6px 0.3px 1px white;
+    }
+
 }

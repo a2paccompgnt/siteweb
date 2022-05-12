@@ -7,10 +7,6 @@ insta
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <div class="elfsight-app-3036d470-8528-4a32-bb31-a019ca0ad695"></div>
 
-fb
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-9b9f13dd-3a42-4bfd-967f-62b79303bd27"></div>
-
 github
 https://github.com/a2paccompgnt/siteweb
 */
@@ -65,10 +61,18 @@ a{
 
 }
 
+li::marker {
+    content: url(images/valider.png);
+}
+
+li{
+    color: white;
+}
+
 .navbar{
     background-color: black;
     box-shadow: 2px 2px 5px #017c91;
-    position: fixed;
+    position: sticky;
     top: 0;
     right: 0;
     left: 0;
@@ -92,10 +96,11 @@ a{
     display: flex;
     justify-content: center;
     padding: 0;
+    margin: 0.3%;
 }
 .navbar li {
     display: flex;
-    padding: 5%;
+    padding: 4% 2%;
 }
 
 .navbar i{
@@ -114,7 +119,6 @@ a{
     position: relative;
     height: 100vh;
     overflow: hidden;
-    margin-top: 3%;
     clip-path: ellipse(100% 100% at 50% 0%);
 }
 
@@ -145,6 +149,46 @@ a{
 }
 
 
+.bloc-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloc-text .text{
+    flex: 0 0 33%;
+    max-width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bloc-text .position{
+    padding: 2%;
+}
+
+.bloc-text .text h2{
+    font-size: 3em;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.bloc-text .text p{
+    margin: 0;
+    margin-bottom: 1%;
+}
+
+.bloc-text .image{
+    flex: 0 0 33%;
+    max-width: 33%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.bloc-text .image img{
+    border-radius: 25px;
+}
 
 .items{
     margin: 1%;
@@ -164,18 +208,14 @@ a{
     text-align: center;
 }
 
-.items .item .image img{
+.items .item .image img, .items .item .image lord-icon:hover{
     width: 30%;
     transition: 0.6s all;
 }
 
-.items .item .image img:hover{
+.items .item .image img:hover, .items .item .image lord-icon:hover{
     filter: drop-shadow(0px 0px 8px #017c91);
 }
-
-
-
-
 
 .actualites{
     padding-top: 3%;
@@ -183,6 +223,10 @@ a{
 
 .actualites .titre{
     text-align: center;
+}
+
+.actualites .titre h2{
+    font-size: 4em;
 }
 
 .actualites .reseaux{
@@ -195,7 +239,6 @@ a{
     width: 500px;
 
 }
-
 
 .contact{
     background: url(images/contacter.jpg);

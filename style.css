@@ -194,6 +194,7 @@ li{
 
 .bloc-text .image img{
     border-radius: 25px;
+    max-width: 600px;
 }
 
 .items{
@@ -391,4 +392,16 @@ li{
         text-shadow: 0.6px 0.3px 1px white;
     }
 
+}
+
+@media screen and (min-width : 1279px) and (max-width: 1441px) {
+    .bloc-text .image img{
+        max-width: 400px;
+    }
+}
+
+@media screen and (min-width : 1023px) and (max-width: 1101px) {
+    .bloc-text .image img{
+        max-width: 300px;
+    }
 }
